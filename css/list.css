@@ -45,22 +45,22 @@
     }
 
     .nav a:hover{color: red;}
+    table tr th img{
+        height: 150px;
+        width: 150px;
+        text-decoration: none;
+        padding: 10px;
+    }
 
-    .login{
-        margin-top: 5em;
-        margin-left: 39em;
-        border: 2px solid red;
-        background-color: rgba(245, 245, 220, .5);
-        height: 24em;
-        width: 20%;
-        padding: 30px;
+    table tr th a p{
         text-align: center;
-    }
-    .login h2{
-        text-align: center ;
-    }
-    .login #login-button button {
-        width: 76%;
+        font-weight: bold;
         color: white;
-        background-color: dodgerblue;
+        font-style: italic;
     }
+    
+    table tr th a :hover{color: red;}
+    table tr th a{
+        text-decoration: none;
+    } 
+    
