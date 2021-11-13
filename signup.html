@@ -1,3 +1,4 @@
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +34,7 @@
 
         <!-- form -->
 
-        <form action="#" class="signup">
+        <form action="login.html" class="signup" onsubmit="return validate()">
         <h2>USER SIGNUP</h2>
         <br>
         <div class="=signup-cont">
@@ -43,12 +44,18 @@
         <br>
         <div class="signup-cont">
             <label>E-Mail:</label>
-            <input style="margin-left: 80px;" type="text" placeholder="Enter your E-Mail">
+            <input style="margin-left: 80px;" type="text" placeholder="Enter your E-Mail" id="email">
+        </div>
+        <div>
+            <label for="error" id="erroremail"></label>
         </div>
         <br>
         <div class="signup-cont">
             <label>Phone Number:</label>
-            <input style="margin-left: 16px;" type="text" placeholder="Enter Your Phone Number">
+            <input style="margin-left: 16px;" type="text" placeholder="Enter Your Phone Number" id="phone">
+        </div>
+        <div>
+        <label for="error" id="errorphone"></label>
         </div>
         <br>
         <div class="signup-cont">
@@ -58,14 +65,18 @@
         <br>
         <div class="signup-cont">
             <label>Password:</label>
-            <input style="margin-left: 62px;" type="password" placeholder="Enter a Strong Password">
+            <input style="margin-left: 62px;" type="password" placeholder="Enter a Strong Password" id="password">
+        </div>
+        <div>
+            <label for="error" id="errorpassword"></label>
         </div>
         <br>
         <div class="signup-cont">
             <label>Confirm Password:</label>
             &nbsp;
-            <input style="margin-left: -3px;" type="password" placeholder="Re-enter Password">
+            <input style="margin-left: -3px;" type="password" placeholder="Re-enter Password" id="confirmpassword">
         </div>
+        <label for="error" id="errorconfirmpassword"></label>
         <br>
         <div id="signup-button">
             <button>SignUp</button>
@@ -74,3 +85,6 @@
             <a href="login.html">alrady have an account?</a>
         </div>
         </form>
+        <script src="js/signup.js"></script>
+        </body>
+        </html>
